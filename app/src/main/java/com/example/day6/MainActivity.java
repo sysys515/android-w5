@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkboxEvent(View v) {
 
-        TextView t1=(TextView)findViewById(R.id.textView3);
+        TextView t1=(TextView)findViewById(R.id.textView4);
 
         switch(v.getId()) {
             case R.id.checkBox1:

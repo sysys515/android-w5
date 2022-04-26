@@ -93,7 +93,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="checkboxEvent2"
+            android:onClick="checkboxEvent"
             android:text="오렌지  (500원)"
             android:textSize="14sp" />
 
@@ -102,7 +102,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="checkboxEvent2"
+            android:onClick="checkboxEvent"
             android:text="키위     (700원)"
             android:textSize="14sp" />
 
@@ -111,7 +111,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="checkboxEvent2"
+            android:onClick="checkboxEvent"
             android:text="수박     (900원)" />
     </LinearLayout>
 
@@ -119,24 +119,38 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:background="#EAF85D"
         android:padding="10dp"
         android:text="과일을 선택하시고 아래 버튼을 클릭하세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="146dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#899704"
+        android:onClick="checkboxEvent2"
         android:text="선택 버튼"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="221dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="#EAF85D"
+        android:padding="10dp"
+        android:text="무슨 과일을 선택하셨나요?"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
